@@ -64,6 +64,17 @@ p {
     color: rgba(255,255,255,.7);
 }
 
+.text-faded a {
+    color: rgba(255,255,255,.7);
+    border-bottom: 1px rgba(255,255,255,.7) dotted;
+}
+
+.text-faded a:hover {
+    color: white;
+    border-bottom: 1px white dotted;
+    text-decoration: none;
+}
+
 section {
     padding: 100px 0;
 }
@@ -90,6 +101,18 @@ aside {
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
     color: #f05f40;
+}
+
+@media(max-width:767px) {
+    .navbar-default .navbar-header .navbar-brand {
+        font-size: small;
+    }
+}
+
+@media(max-width:374px) {
+    .navbar-default .navbar-header .navbar-brand {
+        font-size: x-small;
+    }
 }
 
 .navbar-default .navbar-header .navbar-brand:hover,
@@ -262,7 +285,7 @@ header .header-content .header-content-inner p {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 650px;
+    /*max-width: 700px;*/
 }
 
 .portfolio-box .portfolio-box-caption {
